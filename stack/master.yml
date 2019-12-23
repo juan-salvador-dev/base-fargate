@@ -1,0 +1,10 @@
+Parameters:
+    NameBucket:
+        Type: String
+        Description: Name of bucket S3
+Resources:
+    HelloBucket:
+        Type: AWS::S3::Bucket
+        Properties:
+            BucketName: 
+                Ref: NameBucket
